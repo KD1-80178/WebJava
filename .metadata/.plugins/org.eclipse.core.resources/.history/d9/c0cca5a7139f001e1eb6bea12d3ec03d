@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register</title>
+</head>
+<body>
+	<form method="post" action="login">
+	first name: <input type="text" name="fname" /><br/><br/>
+	last name: <input type="text" name="lname" /><br/><br/>
+	Email: <input type="email" name="email" /><br/><br/>
+	Password: <input type="password" name="passwd" /><br/><br/>
+	Mobile No: <input type="number" name="mobileno" /><br/><br/>
+	Birth date: <input type="date" name="lname" /><br/><br/>
+
+	<input type="submit" value="Sign Up"/>
+	</form>
+</body>
+</html>

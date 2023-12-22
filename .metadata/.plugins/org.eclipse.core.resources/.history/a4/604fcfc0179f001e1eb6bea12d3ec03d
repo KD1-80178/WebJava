@@ -1,0 +1,31 @@
+package com.sunbeam.pojos;
+
+public class shares {
+	private int reviewid;
+	private int userid;
+
+	public shares() {}
+
+	public shares(int reviewid, int userid) {
+		super();
+		this.reviewid = reviewid;
+		this.userid = userid;
+	}
+	public int getReviewid() {
+		return reviewid;
+	}
+	public void setReviewid(int reviewid) {
+		this.reviewid = reviewid;
+	}
+	public int getUserid() {
+		return userid;
+	}
+	public void setUserid(int userid) {
+		this.userid = userid;
+	}
+	@Override
+	public String toString() {
+		return "share [reviewid=" + reviewid + ", userid=" + userid + "]";
+	}
+
+}

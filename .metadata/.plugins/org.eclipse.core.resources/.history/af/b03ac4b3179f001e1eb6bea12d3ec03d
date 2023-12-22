@@ -1,0 +1,69 @@
+package com.sunbeam.pojos;
+
+import java.sql.Timestamp;
+
+public class Review
+	{
+		private int reviewid;
+		private int moviesid;
+		private String review;
+		private int ratings;
+		private int userid;
+		private Timestamp modified;
+	
+	public Review(int reviewid, int moviesid, String review, int ratings, int userid, Timestamp modified) {
+	
+	this.reviewid = reviewid;
+	this.moviesid = moviesid;
+	this.review=review;
+	this.ratings = ratings;
+	this.userid = userid;
+	this.modified = modified;
+	}
+	
+	
+	public int getReviewid() {
+	return reviewid;
+	}
+	public void setReviewid(int reviewid) {
+	this.reviewid = reviewid;
+	}
+	public int getMoviesid() {
+	return moviesid;
+	}
+	public void setMoviesid(int moviesid) {
+	this.moviesid = moviesid;
+	}
+	public int getRatings() {
+	return ratings;
+	}
+	public void setRatings(int ratings) {
+	this.ratings = ratings;
+	}
+	public int getUserid() {
+	return userid;
+	}
+	public void setUserid(int userid) {
+	this.userid = userid;
+	}
+	public Timestamp getModified() {
+	return modified;
+	}
+	public void setModified(Timestamp modified) {
+	this.modified = modified;
+	}
+	public String getReview() {
+	return review;
+	}
+	public void setReview(String review) {
+	this.review = review;
+	}
+	
+	
+	@Override
+	public String toString() {
+		return "reviews1 [reviewid=" + reviewid + ", moviesid=" + moviesid + ", review=" + review + ", ratings="
+				+ ratings + ", userid=" + userid + ", modified=" + modified + "]";
+	}
+	
+	}

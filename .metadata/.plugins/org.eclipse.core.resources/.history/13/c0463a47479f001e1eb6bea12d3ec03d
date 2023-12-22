@@ -1,0 +1,54 @@
+package com.sunbeam.servlets;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.sunbeam.daos.MovieDaoImpl;
+import com.sunbeam.daos.MoviesDao;
+import com.sunbeam.pojos.Movie;
+
+@WebServlet("/Add review")
+public class AddReviewServlet extends HttpServlet {
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		doGet(req, resp);
+	}
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		resp.setContentType("text/html");
+		PrintWriter out=resp.getWriter();
+		out.println("<html>");
+		out.println("<head>");
+		out.println("<title>Add Review</title>");
+		out.println("</head>");
+		out.println("<body>");
+		out.println("<h5>Add Review</h5>");
+		out.println("<select name='movies'>");
+		
+		try(MoviesDao mDao = new MovieDaoImpl()) {
+		}
+			
+			List<Movie> movielist= moviesdao.findAll();
+			
+			for (Movie movies : movielist) {
+				out.printf("<option value="+movies.getId()+">%s</option>",movies.getTitle());
+				
+			}
+			out.println("</select><br>");
+		
+		out.println("<br/><br/> Rating :<input type='text' name='Rating'>");
+		out.println("<br/><br/> Review: <br/><textarea name='review'></textarea>");
+		out.println("<br/><br/> <input type='button' value='Save' name='save' />");
+		out.println("</body>");
+		out.println("</html>");
+	
+}
+}

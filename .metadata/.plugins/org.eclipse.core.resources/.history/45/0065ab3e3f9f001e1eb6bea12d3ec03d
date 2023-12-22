@@ -1,0 +1,9 @@
+package com.sunbeam.servlets;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+@WebServlet("/Add review")
+public class AddReviewServlet extends HttpServlet {
+
+}

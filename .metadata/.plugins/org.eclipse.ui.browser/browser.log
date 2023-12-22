@@ -1,0 +1,15 @@
+
+Dec 20, 2023 20:40:57.799 NEW SESSION
+Dec 20, 2023 20:40:57.799 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Dec 20, 2023 20:40:57.815 WARNING: Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#141 is a dynamic-sized tensor).
+Dec 20, 2023 20:44:01.867 [22336:2532:1220/204401.867:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+Dec 20, 2023 21:28:39.574 [22336:2532:1220/212839.574:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+Dec 20, 2023 21:28:42.252 [22336:2532:1220/212842.252:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Dec 20, 2023 21:29:34.598 [22336:2532:1220/212934.598:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Dec 20, 2023 21:31:17.437 [22336:2532:1220/213117.437:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Dec 20, 2023 21:34:55.597 [22336:2532:1220/213455.597:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Dec 20, 2023 21:42:45.374 [22336:2532:1220/214245.374:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Dec 20, 2023 23:10:28.224 [22336:2532:1220/231028.224:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+Dec 20, 2023 23:24:19.717 [22336:2532:1220/232419.717:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -7
+Dec 21, 2023 24:22:28.216 [22336:2532:1221/002228.216:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+Dec 21, 2023 24:23:18.744 [22336:2532:1221/002318.744:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105

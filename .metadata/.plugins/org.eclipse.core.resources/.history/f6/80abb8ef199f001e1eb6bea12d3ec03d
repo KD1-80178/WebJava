@@ -1,0 +1,18 @@
+package com.sunbeam.daos;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import com.sunbeam.pojos.User;
+
+public interface userDao extends AutoCloseable
+{
+	public int save(User u) throws Exception;
+	public int update(User u) throws Exception;
+	public int updatePassword(int userId, String newPassword) throws Exception;
+	public User findByEmail(String email) throws Exception;
+	public List<User> findAll() throws Exception;
+}

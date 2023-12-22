@@ -1,0 +1,35 @@
+package com.sunbeam.servlets;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/Add review")
+public class AddReviewServlet extends HttpServlet {
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		doGet(req, resp);
+	}
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		resp.setContentType("text/html");
+		PrintWriter out=resp.getWriter();
+		out.println("<html>");
+		out.println("<head>");
+		out.println("<title>Add Review</title>");
+		out.println("</head>");
+		out.println("<body>");
+		out.println("<h5>Add Review</h5>");
+		out.println("Movie: <select> <option> </option></select>");
+		out.println("<br/><br/>Rating :<input type='text' name='Rating' >");
+		out.println("</textarea name='review'></textarea>");
+		out.println("</body>");
+		out.println("</html>");
+	}
+}
